@@ -10,27 +10,26 @@ btnJob.addEventListener("click", applyToJob);
 function applyToJob() {
   console.log("La désicion est en cours ...");
   const result = startDesicionProcess();
-  console.log('result', result);
-//   setTimeout(() => {
-//     console.log("Vous avez le job");
-//   }, 3000);
+  console.log("result", result);
+  //   setTimeout(() => {
+  //     console.log("Vous avez le job");
+  //   }, 3000);
 }
 
 function startDesicionProcess() {
   return new Promise((resolve, reject) => {
     console.log("Recruteur - Pendant ce temps je reçois d'autres candidats");
     setTimeout(() => {
-        if (candidat.isProgrammer && candidat.isCool) {
-            console.log('avant le resolve');
-            resolve("Recruteur - Bienvenue dans notre entreprise !");
-          } else {
-            console.log('avant reject');
-            reject(
-              "Recruteur - Malgré tout l'intêret de votre canditaure, nous sommes au regret ..."
-            );
-          }
-    }, 2000)
- 
+      if (candidat.isProgrammer && candidat.isCool) {
+        console.log("avant le resolve");
+        resolve("Recruteur - Bienvenue dans notre entreprise !");
+      } else {
+        console.log("avant reject");
+        reject(
+          "Recruteur - Malgré tout l'intêret de votre canditaure, nous sommes au regret ..."
+        );
+      }
+    }, 2000);
   });
 }
 

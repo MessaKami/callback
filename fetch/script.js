@@ -10,17 +10,17 @@ const candidat = {
 btnJob.addEventListener("click", applyToJob);
 githubForm.addEventListener("submit", searchGithub);
 
-// function applyToJob() {
-//   console.log("La désicion est en cours ...");
-//   startDesicionProcess()
-//     .then((result) => {
-//       console.log("result", result);
-//     })
-//     .catch((err) => {
-//       console.log("err", err);
-//     });
-//     console.log('Juste après startDesicionProcess')
-// }
+function applyToJob() {
+  console.log("La désicion est en cours ...");
+  startDesicionProcess()
+    .then((result) => {
+      console.log("result", result);
+    })
+    .catch((err) => {
+      console.log("err", err);
+    });
+    console.log('Juste après startDesicionProcess')
+}
 
 async function applyToJob() {
   console.log("La désicion est en cours ...");
@@ -61,5 +61,8 @@ function searchGithub(e) {
     .then((jsonData) => {
       console.log("jsonData", jsonData);
       githubResult.innerHTML = `<pre><code>${JSON.stringify(jsonData, null, 4)}</code></pre>`
+    })
+    .catch((error) => {
+      console.error("Erreur lors de la requête fetch:", error);
     });
 }

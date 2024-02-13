@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 80px; /* Pour laisser de la place à la barre de navigation */
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+/* Barre de navigation */
+.navbar {
+  background-color: #dc3545; /* Rouge foncé */
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #fff; /* Blanc */
+}
+
+/* Bouton "Commander" */
+#btn-food {
+  background-color: #007bff; /* Bleu */
+  border-color: #007bff; /* Bleu */
+  position: relative;
+  left: 185px;
+}
+
+#btn-food:hover {
+  background-color: #0056b3; /* Bleu foncé au survol */
+  border-color: #0056b3; /* Bleu foncé au survol */
+}
+
+/* Carte */
+.card-title {
+  color: #0a0001; /* Rouge foncé */
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+}
+
+.card-text {
+  color: #ffffff; /* Gris */
+  text-align: center;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px; /* Coins arrondis */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.card-body.img2 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px; /* Coins arrondis */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+h2 {
+  color: red;
+  text-align: center;
+}
+.card2 {
+  margin-top: 80px;
+}
+
+.btn2 {
+  margin-top: 10px;
+  position: relative;
+  left: 185px;
+}

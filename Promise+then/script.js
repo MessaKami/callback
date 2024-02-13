@@ -16,7 +16,7 @@ function applyToJob() {
     .catch((err) => {
       console.log("err", err);
     });
-    console.log('Juste après startDesicionProcess')
+  console.log("Juste après startDesicionProcess");
   //   setTimeout(() => {
   //     console.log("Vous avez le job");
   //   }, 3000);
